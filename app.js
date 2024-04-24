@@ -1,9 +1,9 @@
 let currentLanguage = "EN"
 let currentCurrency = "EUR"
-let gameHasBuyBonus = false
+let gameHasBuyBonus = true
 let gameHasBurningMode = true
 let gamehasSpecialBet = true
-let gameHasHunterMode = true
+let gameHasHunterMode = false
 let mainColor = "#ff0096"
 
 function closeInfo() {
@@ -29,7 +29,7 @@ function createHeadingSection() {
     const headingSectionVersion = document.createElement("h3");
 
     // Set text content
-    headingSectionTitle.textContent = "Temple Queen";
+    headingSectionTitle.textContent = "Epic Gods";
     headingSectionVersion.textContent = "Game Version: v1.0.0";
 
     // Append elements
@@ -53,7 +53,7 @@ function createHTMLFromJSON() {
         .then((data) => {
 
             // Title of the Game
-            document.title = "Temple Queen";
+            document.title = "Epic Gods";
 
             // Create Sections
             const main = document.querySelector(".symbol-section");
